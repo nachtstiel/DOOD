@@ -1,0 +1,148 @@
+<svg width="75" height="75" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet">
+ <defs>
+  <path id="g1e0ZlNLMz" d="m51.08,60.08c0,4.3 -6.18,7.8 -13.79,7.8c-7.61,0 -13.79,-3.5 -13.79,-7.8c0,-4.3 6.18,-7.79 13.79,-7.79c7.61,0 13.79,3.49 13.79,7.79z"/>
+  <path id="byp6X0sKK" d="m55.85,61.81l-8.23,2.99l-13.99,-38.44l8.22,-3l14,38.45z"/>
+  <path id="abDE8ZK32" d="m32.12,23.36l8.22,3l-13.99,38.44l-8.23,-2.99l14,-38.45z"/>
+  <path id="cGwwXl3C" d="m40.86,53.71c1.29,0 2.34,1.05 2.34,2.35c0,2.6 0,8.05 0,10.65c0,1.29 -1.05,2.34 -2.34,2.34c-0.56,0 0.1,0 -0.46,0c-1.3,0 -2.35,-1.05 -2.35,-2.34c0,-2.6 0,-8.05 0,-10.65c0,-1.3 1.05,-2.35 2.35,-2.35c0.56,0 -0.1,0 0.46,0z"/>
+  <path id="a18Zy1uBXF" d="m33.77,53.71c1.29,0 2.34,1.05 2.34,2.35c0,2.6 0,8.05 0,10.65c0,1.29 -1.05,2.34 -2.34,2.34c-0.56,0 0.1,0 -0.46,0c-1.29,0 -2.34,-1.05 -2.34,-2.34c0,-2.6 0,-8.05 0,-10.65c0,-1.3 1.05,-2.35 2.34,-2.35c0.56,0 -0.1,0 0.46,0z"/>
+  <path id="b1hqdGzRGg" d="m47.57,15.27c0,5.78 -4.7,10.48 -10.49,10.48c-5.78,0 -10.48,-4.7 -10.48,-10.48c0,-5.79 4.7,-10.49 10.48,-10.49c5.79,0 10.49,4.7 10.49,10.49z"/>
+  <path id="c13i7n3LM" d="m40.86,41.58c1.29,0 2.34,1.05 2.34,2.34c0,2.6 0,8.05 0,10.65c0,1.3 -1.05,2.35 -2.34,2.35c-1.98,0 -5.57,0 -7.55,0c-1.29,0 -2.34,-1.05 -2.34,-2.35c0,-2.6 0,-8.05 0,-10.65c0,-1.29 1.05,-2.34 2.34,-2.34c1.98,0 5.57,0 7.55,0z"/>
+  <path id="aKgDyI3LX" d="m36.11,68.57c0,0.91 -2.65,1.65 -5.92,1.65c-3.27,0 -5.92,-0.74 -5.92,-1.65c0,-0.91 2.65,-1.65 5.92,-1.65c3.27,0 5.92,0.74 5.92,1.65z"/>
+  <path id="arDBjEc3G" d="m40.86,24.98c1.29,0 2.34,1.05 2.34,2.34c0,4.81 0,16.91 0,21.72c0,1.29 -1.05,2.34 -2.34,2.34c-1.98,0 -5.57,0 -7.55,0c-1.29,0 -2.34,-1.05 -2.34,-2.34c0,-4.81 0,-16.91 0,-21.72c0,-1.29 1.05,-2.34 2.34,-2.34c1.98,0 5.57,0 7.55,0z"/>
+  <path id="a5s4oiYhiJ" d="m49.12,68.57c0,0.91 -2.65,1.65 -5.92,1.65c-3.27,0 -5.92,-0.74 -5.92,-1.65c0,-0.91 2.65,-1.65 5.92,-1.65c3.27,0 5.92,0.74 5.92,1.65z"/>
+  <path id="e2dQFfKyzn" d="m31.54,54.3l4,0l0,7.67l-4,0l0,-7.67z"/>
+  <path id="b1EVALiDHq" d="m38.63,54.91l4,0l0,7.67l-4,0l0,-7.67z"/>
+  <path id="a2y7eObdi8" d="m31.1,25.58c0.54,-0.39 1.3,-0.27 1.69,0.27c0.25,0.34 0.27,0.37 0.52,0.71c0.39,0.54 0.27,1.3 -0.27,1.69c-1.78,1.3 -6.15,4.47 -7.93,5.77c-0.55,0.39 -1.3,0.27 -1.7,-0.27c-0.24,-0.34 -0.27,-0.37 -0.51,-0.71c-0.4,-0.54 -0.28,-1.3 0.27,-1.7c1.78,-1.29 6.15,-4.46 7.93,-5.76z"/>
+  <path id="iy6eUCKdr" d="m50.61,31.77c0.51,0.44 0.56,1.21 0.12,1.71c-0.27,0.32 -0.3,0.35 -0.57,0.66c-0.44,0.51 -1.21,0.56 -1.72,0.12c-1.66,-1.45 -5.73,-4.99 -7.4,-6.43c-0.5,-0.44 -0.55,-1.21 -0.12,-1.71c0.28,-0.32 0.3,-0.35 0.58,-0.66c0.44,-0.51 1.2,-0.56 1.71,-0.12c1.66,1.44 5.74,4.98 7.4,6.43z"/>
+  <path id="a1MuMxPYYd" d="m25.06,31.92c0.64,0 1.17,0.53 1.17,1.17c0,1.63 0,5.34 0,6.97c0,0.65 -0.53,1.17 -1.17,1.17c-0.48,0 -0.74,0 -1.22,0c-0.65,0 -1.17,-0.52 -1.17,-1.17c0,-1.63 0,-5.34 0,-6.97c0,-0.64 0.52,-1.17 1.17,-1.17c0.48,0 0.74,0 1.22,0z"/>
+  <path id="b6PPenEFad" d="m49.96,31.92c0.65,0 1.17,0.53 1.17,1.17c0,1.63 0,5.34 0,6.97c0,0.65 -0.52,1.17 -1.17,1.17c-0.48,0 -0.74,0 -1.22,0c-0.65,0 -1.17,-0.52 -1.17,-1.17c0,-1.63 0,-5.34 0,-6.97c0,-0.64 0.52,-1.17 1.17,-1.17c0.48,0 0.74,0 1.22,0z"/>
+  <path id="b6dyaGWwA" d="m27.02,42.55c0,1.79 -1.15,3.25 -2.57,3.25c-1.42,0 -2.58,-1.46 -2.58,-3.25c0,-1.8 1.16,-3.25 2.58,-3.25c1.42,0 2.57,1.45 2.57,3.25z"/>
+  <path id="c49Z7Cml9B" d="m51.92,42.55c0,1.79 -1.15,3.25 -2.57,3.25c-1.42,0 -2.57,-1.46 -2.57,-3.25c0,-1.8 1.15,-3.25 2.57,-3.25c1.42,0 2.57,1.45 2.57,3.25z"/>
+  <path id="a6pzLWBdfK" d="m34.66,10.73c0,0.66 -0.5,1.19 -1.12,1.19c-0.62,0 -1.13,-0.53 -1.13,-1.19c0,-0.65 0.51,-1.18 1.13,-1.18c0.62,0 1.12,0.53 1.12,1.18z"/>
+  <path id="eIpFuOOfb" d="m41.75,10.73c0,0.66 -0.5,1.19 -1.12,1.19c-0.62,0 -1.13,-0.53 -1.13,-1.19c0,-0.65 0.51,-1.18 1.13,-1.18c0.62,0 1.12,0.53 1.12,1.18z"/>
+  <path id="c2vmrZTtpG" d="m32.27,17.17l0.81,1.06l1.07,0.5l1.18,0.69l1.13,0.81l1.06,0.5l1.19,0.07l1.19,-0.19l1.25,-0.44l1.25,-0.56l1,-0.69l0.5,-1.19"/>
+  <path id="d1BpqZGYp9" d="m37.58,14.77c0,0.27 -0.22,0.5 -0.5,0.5c-0.27,0 -0.5,-0.23 -0.5,-0.5c0,-0.28 0.23,-0.5 0.5,-0.5c0.28,0 0.5,0.22 0.5,0.5z"/>
+  <path id="d2FwOK9zO" d="m31.44,25.47l3.87,0l0,5.25l-3.87,0l0,-5.25z"/>
+  <path id="fSk95zPlQ" d="m38.86,25.47l3.87,0l0,5.25l-3.87,0l0,-5.25z"/>
+  <path id="b7Jg7SR9J" d="m26.21,29.83l1.3,1.86l-3.17,2.22l-1.3,-1.86l3.17,-2.22z"/>
+  <path id="b2yS8rdm1s" d="m50.41,32.25l-1.46,1.73l-2.97,-2.49l1.46,-1.73l2.97,2.49z"/>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_3">
+   <use id="svg_4" fill="#000000" xlink:href="#g1e0ZlNLMz"/>
+  </g>
+  <g id="svg_5">
+   <use id="svg_6" fill="#000000" xlink:href="#byp6X0sKK"/>
+  </g>
+  <g id="svg_7">
+   <use id="svg_8" fill="#000000" xlink:href="#abDE8ZK32"/>
+  </g>
+  <g id="svg_10">
+   <use id="svg_11" fill="#512300" xlink:href="#cGwwXl3C"/>
+   <g id="svg_12">
+    <use id="svg_13" stroke="#040306" fill-opacity="0" xlink:href="#cGwwXl3C"/>
+   </g>
+  </g>
+  <g id="svg_14">
+   <use id="svg_15" fill="#512300" xlink:href="#a18Zy1uBXF"/>
+   <g id="svg_16">
+    <use id="svg_17" stroke="#040306" fill-opacity="0" xlink:href="#a18Zy1uBXF"/>
+   </g>
+  </g>
+  <g id="svg_18">
+   <use id="svg_19" fill="#d6bea9" xlink:href="#b1hqdGzRGg"/>
+   <g id="svg_20">
+    <use fill="#d6bea9" id="svg_21" stroke="#000000" fill-opacity="0" xlink:href="#b1hqdGzRGg"/>
+   </g>
+  </g>
+  <g id="svg_22">
+   <use id="svg_23" fill="#512300" xlink:href="#c13i7n3LM"/>
+   <g id="svg_24">
+    <use id="svg_25" stroke="#000000" fill-opacity="0" xlink:href="#c13i7n3LM"/>
+   </g>
+  </g>
+  <g id="svg_26">
+   <use id="svg_27" fill="#000000" xlink:href="#aKgDyI3LX"/>
+  </g>
+  <g id="svg_28">
+   <use id="svg_29" fill="#750000" xlink:href="#arDBjEc3G"/>
+   <g id="svg_30">
+    <use id="svg_31" stroke="#000000" fill-opacity="0" xlink:href="#arDBjEc3G"/>
+   </g>
+  </g>
+  <g id="svg_32">
+   <use id="svg_33" fill="#000000" xlink:href="#a5s4oiYhiJ"/>
+  </g>
+  <g id="svg_34">
+   <use id="svg_35" fill="#512300" xlink:href="#e2dQFfKyzn"/>
+  </g>
+  <g id="svg_36">
+   <use id="svg_37" fill="#512300" xlink:href="#b1EVALiDHq"/>
+  </g>
+  <g id="svg_38">
+   <use id="svg_39" fill="#750000" xlink:href="#a2y7eObdi8"/>
+   <g id="svg_40">
+    <use id="svg_41" stroke="#000000" fill-opacity="0" xlink:href="#a2y7eObdi8"/>
+   </g>
+  </g>
+  <g id="svg_42">
+   <use id="svg_43" fill="#750000" xlink:href="#iy6eUCKdr"/>
+   <g id="svg_44">
+    <use id="svg_45" stroke="#000000" fill-opacity="0" xlink:href="#iy6eUCKdr"/>
+   </g>
+  </g>
+  <g id="svg_46">
+   <use id="svg_47" fill="#750000" xlink:href="#a1MuMxPYYd"/>
+   <g id="svg_48">
+    <use id="svg_49" stroke="#000000" fill-opacity="0" xlink:href="#a1MuMxPYYd"/>
+   </g>
+  </g>
+  <g id="svg_50">
+   <use id="svg_51" fill="#750000" xlink:href="#b6PPenEFad"/>
+   <g id="svg_52">
+    <use id="svg_53" stroke="#000000" fill-opacity="0" xlink:href="#b6PPenEFad"/>
+   </g>
+  </g>
+  <g id="svg_54">
+   <use id="svg_55" fill="#ecc3a2" xlink:href="#b6dyaGWwA"/>
+   <g id="svg_56">
+    <use id="svg_57" stroke="#000000" fill-opacity="0" xlink:href="#b6dyaGWwA"/>
+   </g>
+  </g>
+  <g id="svg_58">
+   <use id="svg_59" fill="#ecc3a2" xlink:href="#c49Z7Cml9B"/>
+   <g id="svg_60">
+    <use id="svg_61" stroke="#000000" fill-opacity="0" xlink:href="#c49Z7Cml9B"/>
+   </g>
+  </g>
+  <g id="svg_62">
+   <use id="svg_63" fill="#000000" xlink:href="#a6pzLWBdfK"/>
+  </g>
+  <g id="svg_64">
+   <use id="svg_65" fill="#000000" xlink:href="#eIpFuOOfb"/>
+  </g>
+  <g transform="rotate(-179.77146911621094 38.084999084472656,18.985000610351562) " id="svg_66">
+   <g id="svg_67">
+    <use id="svg_68" stroke="#000000" fill-opacity="0" xlink:href="#c2vmrZTtpG"/>
+   </g>
+  </g>
+  <g id="svg_69">
+   <use id="svg_70" fill="#000000" xlink:href="#d1BpqZGYp9"/>
+  </g>
+  <g id="svg_71">
+   <use id="svg_72" fill="#750000" xlink:href="#d2FwOK9zO"/>
+  </g>
+  <g id="svg_73">
+   <use id="svg_74" fill="#750000" xlink:href="#fSk95zPlQ"/>
+  </g>
+  <g id="svg_75">
+   <use id="svg_76" fill="#750000" xlink:href="#b7Jg7SR9J"/>
+  </g>
+  <g id="svg_77">
+   <use id="svg_78" fill="#750000" xlink:href="#b2yS8rdm1s"/>
+  </g>
+  <line id="svg_79" y2="10.42969" x2="36.61011" y1="8.47193" x1="31.80469" stroke="#000000" fill="none"/>
+  <line id="svg_80" y2="10.78565" x2="38.03394" y1="7.93799" x1="42.12744" stroke="#000000" fill="none"/>
+ </g>
+</svg>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head>
+	<title>DOOD</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="This is just a test, yo!" />
+	<script type="application/javascript" src="Scripts/lz-string.js"></script>
+	<script type="application/javascript" src="Scripts/dood.js"></script>
+	<script type="application/javascript" src="Scripts/playerstats.js"></script>
+	<script type="text/javascript" src="Scripts/d3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Styles/doodstyle.css" />
+</head>
+	
+	
+<body onload="Startload()">
+<svg width="0" height="0">
+<linearGradient id="classbutton">
+<stop offset="0%" stop-color="rgb(145,92,46)"/>
+<stop offset="100%" stop-color="rgb(100,45,10)"/>
+</linearGradient>
+
+<linearGradient id="classbuttonhover">
+<stop offset="0%" stop-color="rgb(115,62,16)"/>
+<stop offset="100%" stop-color="rgb(70,15,0)"/>
+</linearGradient>
+
+<linearGradient id="scenebutton">
+<stop offset="0%" stop-color="rgb(122,127,128)"/>
+<stop offset="100%" stop-color="rgb(67,75,77)"/>
+</linearGradient>
+
+<linearGradient id="scenebuttonhover">
+<stop offset="0%" stop-color="rgb(92,97,98)"/>
+<stop offset="100%" stop-color="rgb(37,45,47)"/>
+</linearGradient>
+
+<filter id="dropshadow" height="130%">
+  <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+  <feOffset dx="1" dy="1" result="offsetblur"/> <!-- how much to offset -->
+  <feComponentTransfer>
+    <feFuncA type="linear" slope="0.2"/> <!-- slope is the opacity of the shadow -->
+  </feComponentTransfer>
+  <feMerge> 
+    <feMergeNode/> <!-- this contains the offset blurred image -->
+    <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+  </feMerge>
+</filter>
+
+<filter id="inset-and-drop-shadow" primitiveUnits="objectBoundingBox" x="0%" y="0%">
+    <feOffset dx="0.01" dy="0.02" />
+    <feGaussianBlur stdDeviation="0.01" result="offset-blur" />
+    <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
+    <feFlood flood-color="black" flood-opacity="1" result="color" />
+    <feComposite operator="in" in="color" in2="inverse" result="shadow" />
+    <feComposite operator="over" in="shadow" in2="SourceGraphic" result="inset-shadow" />
+    <feGaussianBlur in="SourceAlpha" stdDeviation="0.0012" />
+    <feOffset dx="0.006" dy="0.013" result="offsetblur" />
+    <feFlood flood-color="black" />
+    <feComposite in2="offsetblur" operator="in" />
+    <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="inset-shadow" />
+    </feMerge>
+</filter>
+</svg>
+<div id="Start">
+<svg width="700" height="700" id="mainsvg">
+<script xlink:href="Scripts/dood.js"></script>
+
+
+<rect width="700" height="700" x="0" y="0" style="fill:rgb(25,68,102); stroke-width:2px; stroke:black;">
+</rect>
+<rect width="700" height="75" x="0" y="0" style="fill:rgb(15,58,92); stroke-width:5px; stroke:black;">
+</rect>
+<text x="50%" y="40" class="svgtext" dominant-baseline="middle" text-anchor="middle" style="font-size:48px;">
+DOOD
+</text>
+<text x="10" y="105" class="svgtext">
+Select a Class
+</text>
+
+<g class="classbutt" id="Advbutt"
+onclick="ClassSet('Adventurer')"
+>
+<rect width="180" height="30" x="10" y="115">
+</rect>
+<text x="100" y="140" text-anchor="middle" class="svgtext">
+Adventurer
+</text>
+</g>
+
+<g class="classbutt" id="Barbbutt"
+onclick="ClassSet('Barbarian')"
+>
+<rect width="180" height="30" x="10" y="150">
+</rect>
+<text x="100" y="175" text-anchor="middle" class="svgtext">
+Barbarian
+</text>
+</g>
+
+<g class="classbutt" id="Magebutt"
+onclick="ClassSet('Mage')"
+>
+<rect width="180" height="30" x="10" y="185">
+</rect>
+<text x="100" y="210" text-anchor="middle" class="svgtext">
+Mage
+</text>
+</g>
+
+<g class="classbutt" id="Palbutt"
+onclick="ClassSet('Paladin')"
+>
+<rect width="180" height="30" x="10" y="220">
+</rect>
+<text x="100" y="245" text-anchor="middle" class="svgtext">
+Paladin
+</text>
+</g>
+
+<g class="classbutt" id="Arcbutt"
+onclick="ClassSet('Archer')"
+>
+<rect width="180" height="30" x="10" y="255">
+</rect>
+<text x="100" y="280" text-anchor="middle" class="svgtext">
+Archer
+</text>
+</g>
+
+<g class="classbutt" id="dembutt"
+onclick="ClassSet('Demon')"
+>
+<rect width="180" height="30" x="10" y="290">
+</rect>
+<text x="100" y="315" text-anchor="middle" class="svgtext">
+Demond
+</text>
+</g>
+
+<g id="ElementGroup" style="display:none;">
+<text x="10" y="315" class="svgtext">
+Select an Element
+</text>
+<g class="classbutt" id="Firebutt"
+onclick="ElementSet('Fire')"
+>
+<rect width="180" height="30" x="10" y="325">
+</rect>
+<text x="100" y="350" text-anchor="middle" class="svgtext">
+Fire
+</text>
+</g>
+<g class="classbutt" id="Waterbutt"
+onclick="ElementSet('Water')"
+>
+<rect width="180" height="30" x="10" y="360">
+</rect>
+<text x="100" y="385" text-anchor="middle" class="svgtext">
+Water
+</text>
+</g>
+
+<g class="classbutt" id="Naturebutt"
+onclick="ElementSet('Nature')"
+>
+<rect width="180" height="30" x="10" y="395">
+</rect>
+<text x="100" y="420" text-anchor="middle" class="svgtext">
+Nature
+</text>
+</g>
+</g>
+
+<g class="classbutt" id="NameButt"
+onclick="NamePlayer()"
+>
+<rect width="220" height="30" x="10" y="430">
+</rect>
+<text x="120" y="455" text-anchor="middle" class="svgtext">
+Change Name
+</text>
+</g>
+
+<g class="scenebutt" id="gamestartbutt"
+onclick="ChangeScene('Main')"
+style="display:none;"
+>
+<rect width="270" height="45" x="215" y="610" rx="22.5">
+</rect>
+<text x="350" y="650" text-anchor="middle" class="svgtext" style="font-size:48px;">
+Start
+</text>
+</g>
+
+<text x="300" y="350" class="svgtext">
+Class Stats
+</text>
+
+<text x="300" y="380" id="PStrlabel" class="svgtext">
+Strength:
+</text>
+
+<text x="300" y="410" id="PAcclabel" class="svgtext">
+Accuracy:
+</text>
+
+<text x="300" y="440" id="PArmlabel" class="svgtext">
+Armor:
+</text>
+
+<text x="300" y="470" id="PReflabel" class="svgtext">
+Reflexes:
+</text>
+
+</svg>
+
+<img id="ElemImg" src="" style="height:200px; width:200px; position:absolute; top:100px; left:500px; display:none;"/>
+<img id="CharImg" src="" style="height:200px; width:200px; position:absolute; top:100px; left:300px; display:none;"/>
+<button id="helpbutt" onclick="ChangeScene('help')" style="position:absolute; left:500px; top:50px;">Help</button>
+</div>
+
+<div id="Main">
+<textarea id="ActLog" readonly="true" style="position:absolute; top:0px; left:810px; width:600px; height:500px; font-size:30px;"></textarea>
+
+<button id="ClickAtk" onclick="ClickAttack()" style="position:absolute; top:520px; left:800px;">Attack!</button>
+<label id="ClkAtk" style="position:absolute; top:520px; left:900px;">Click Damage: 1</label>
+
+<button id="UpgradeButt" class="upgradebutt" onclick="UpgradeClickAtk()" style="position:absolute; top:540px; left:800px;">Upgrade Click: 100 Gold. +1 Click Damage</button>
+<label id="CurGold" style="position:absolute; top:520px; left:1100px;"> Current Gold: 0</label>
+<label id="Statchk" style="position:absolute; top:540px; left:1100px;"></label>
+<label id="Statchk2" style="position:absolute; top:540px; left:1120px;"></label>
+
+<button id="HealthPts" class="upgradebutt" onclick="ManualStats('HealthPts')" style="position:absolute; top:560px; left:800px;">Upgrade Health: 100 Gold. +1 Health Point</button>
+<button id="StrengthPts" class="upgradebutt" onclick="ManualStats('StrengthPts')" style="position:absolute; top:580px; left:800px;">Upgrade Strength: 100 Gold. +1 Strength Point</button>
+<button id="AccuracyPts" class="upgradebutt" onclick="ManualStats('AccuracyPts')" style="position:absolute; top:600px; left:800px;">Upgrade Accuracy: 100 Gold. +1 Accuracy Point</button>
+<button id="ArmorPts" class="upgradebutt" onclick="ManualStats('ArmorPts')" style="position:absolute; top:620px; left:800px;">Upgrade Armor: 100 Gold. +1 Armor Point</button>
+<button id="ReflexesPts" class="upgradebutt" onclick="ManualStats('ReflexesPts')" style="position:absolute; top:640px; left:800px;">Upgrade Reflexes: 100 Gold. +1 Reflexes Point</button>
+<button id="Basic Attack" class="upgradebutt" onclick="AtkUpgrade('Basic Attack')" style="position:absolute; top:660px; left:800px;">Upgrade Basic Attack: 100 Gold. +10% Damage</button>
+<label id="Basic AttackDam" class="upgradebutt" style="position:absolute; top:660px; left:1150px;"></label>
+<button id="Power Attack" class="upgradebutt" onclick="AtkUpgrade('Power Attack')" style="position:absolute; top:680px; left:800px;">Upgrade Power Attack: 100 Gold. +10% Damage</button>
+<label id="Power AttackDam" style="position:absolute; top:680px; left:1150px;"></label>
+<button id="Magic Attack" class="upgradebutt" onclick="AtkUpgrade('Magic Attack')" style="position:absolute; top:700px; left:800px;">Unlock Magic Attack: 100 Gold.</button>
+<label id="Magic AttackDam" style="position:absolute; top:700px; left:1150px;"></label>
+<button id="Magic Power" class="upgradebutt" onclick="AtkUpgrade('Magic Power')" style="position:absolute; top:720px; left:800px;">Unlock Power Magic Attack: 100 Gold.</button>
+<label id="Magic PowerDam" style="position:absolute; top:720px; left:1150px;"></label>
+<button id="Heal" class="upgradebutt" onclick="AtkUpgrade('Heal')" style="position:absolute; top:740px; left:800px;">Unlock Healing Skill: 100 Gold.</button>
+<label id="HealDam" style="position:absolute; top:740px; left:1150px;"></label>
+
+
+<canvas id="NamBkg" width="800" height="40" style="position:absolute; left:5px; top:0px; z-index:0;">
+</canvas> 
+<canvas id="Charnames" width="800" height="40" style="position:absolute; left:5px; top:0px; z-index:1;">
+</canvas>
+
+<canvas id="BattleScreenBkg" width="800" height="250" style="position:absolute; left:5px; top:40px; z-index:0;">
+</canvas>
+
+<canvas id="BattleScreen" width="800" height="250" style="position:absolute; left:5px; top:40px; z-index:1;">
+</canvas>
+<canvas id="EnemyCanvas" width="200" height="200" style="position:absolute; left:600px top:40px; z-index:2;">
+</canvas>
+
+
+<canvas id="StatBkg" width="800" height="500" style="position:absolute; left:5px; top:280px; z-index:0;">
+</canvas> 
+
+<canvas id="PBattHealth" width="350" height="40" style="position:absolute; left:5px; top:280px; z-index:1;">
+</canvas>
+<canvas id="PBattStr" width="350" height="40" style="position:absolute; left:5px; top:320px; z-index:1;">
+</canvas>
+<canvas id="PBattAcc" width="350" height="40" style="position:absolute; left:5px; top:360px; z-index:1;">
+</canvas>
+<canvas id="PBattArm" width="350" height="40" style="position:absolute; left:5px; top:400px; z-index:1;">
+</canvas>
+<canvas id="PBattRef" width="350" height="40" style="position:absolute; left:5px; top:440px; z-index:1;">
+</canvas>
+<canvas id="PBattMan" width="350" height="40" style="position:absolute; left:5px; top:480px; z-index:1;">
+</canvas>
+<canvas id="PBattElem" width ="250" height="250" style="position:absolute; left:5px; top:520px; z-index:1;">
+</canvas>
+
+<canvas id="EBattHealth" width="350" height="40" style="position:absolute; left:450px; top:280px; z-index:1;">
+</canvas>
+<canvas id="EBattStr" width="350" height="40" style="position:absolute; left:450px; top:320px; z-index:1;">
+</canvas>
+<canvas id="EBattAcc" width="350" height="40" style="position:absolute; left:450px; top:360px; z-index:1;">
+</canvas>
+<canvas id="EBattArm" width="350" height="40" style="position:absolute; left:450px; top:400px; z-index:1;">
+</canvas>
+<canvas id="EBattRef" width="350" height="40" style="position:absolute; left:450px; top:440px; z-index:1;">
+</canvas>
+<canvas id="EBattElem" width ="250" height="250" style="position:absolute; left:450px; top:520px; z-index:1;">
+</canvas>
+<button id="RebirthButt" onclick="rebirth()" width ="250" height="40" style="position:absolute; left:270px; top:520px; z-index:2; display:none;">
+Rebirth!
+</button>
+
+
+
+
+</div>
+
+<div id="help">
+<h1>DOOD Help Page</h1>
+<h2>Stats:</h2>
+Health: Lose it all and you die!<br>
+Strength: This is your maximum damage<br>
+Accuracy: This is your minimum damage and affects your ability to hit the enemy.<br>
+Armor: This is your damage reduction<br>
+Reflexes: This is your ability to dodge enemy attacks<br>
+Mana: This is your resource for powerful attacks<br>
+Focus Stats: Focus stats are stats that have increased growth and are indicated by the green coloring on the stat in game.<br>
+
+<h2>Elements:</h2>
+<table class="helptable">
+<tr><td>Element</td><td>Strong Against</td><td>Weak Against</td><td>Stat Focus</td><td>Additional Effect</td></tr>
+<tr><td>Fire</td><td>Nature</td><td>Water</td><td>Strength</td><td>Burn</td></tr>
+<tr><td>Water</td><td>Fire</td><td>Nature</td><td>Health</td><td>Weakness</td></tr>
+<tr><td>Nature</td><td>Water</td><td>Fire</td><td>Reflexes</td><td>Posion</td></tr>
+</table>
+
+<h2>Additional Effects:</h2>
+Burn: Deals damage equal to 5% of current health and reduces damage by 5%<br>
+Weakness: reduces damage by 10%<br>
+Posion: Deals damage equal to 10% of current health<br>
+
+<h2>Characters:</h2>
+Each character has their own stat focuses, mana rates, skill sets, and focus skills<br>
+<table class="helptable">
+<tr><td></td><td>Adventurer</td><td>Barbarian</td><td>Mage</td><td>Paladin</td><td>Archer</td></tr>
+<tr><td>Stat Focus</td><td>Strength, Reflexes</td><td>Strength, Accuracy, Armor</td><td>Strength, Accuracy</td><td>Strength, Armor</td><td>Strength, Accuracy, Reflexes</td></tr>
+<tr><td>Skills</td><td>All</td><td>Basic Attack, Power Attack, Healing</td><td>All</td><td>All</td><td>Basic Attack, Power Attack, Healing</td></tr>
+<tr><td>Mana Gain</td><td>+1 per turn</td><td>+20 after kill</td><td>+2 per turn</td><td>+1 per turn</td><td>+20 after kill</td></tr>
+<tr><td>Boosted Skills</td><td>Basic Attack</td><td>Power Attack</td><td>Elemental Attack, Elemental Power</td><td>Power Attack, Healing</td><td>Power Attack</td></tr>
+</table><br>
+
+<h2>Areas:</h2>
+Each area spawns enemies corresponding to it's elements.<br>
+<table class="helptable">
+<tr><td>Area</td><td>Element 1</td><td>Element 2</td></tr>
+<tr><td>Meadow</td><td>All</td><td></td></tr>
+<tr><td>Volcano</td><td>Fire</td><td></td></tr>
+<tr><td>Ocean</td><td>Water</td><td></td></tr>
+<tr><td>Forest</td><td>Nature</td><td></td></tr>
+<tr><td>Hot Springs</td><td>Fire</td><td>Water</td></tr>
+<tr><td>California</td><td>Fire</td><td>Nature</td></tr>
+<tr><td>Island</td><td>Water</td><td>Nature</td></tr>
+</table><br>
+
+<h2>Damage calculation:</h2>
+Damage is calculated based on multipliers rather than direct Strength vs Armor comparison.<br>
+Damage roll is a random number between your strength and accuracy unless your accuracy is higher than your strength, in which case the damage roll will be your strength value.<br>
+Defense roll is a random number between your armor and reflexes unless your reflexes is higher than your armor, in which case the damage roll will be your armor.<br>
+Damage dealt is calculated via this formula: attacker damage roll * (attacker damage roll / (attacker damage roll + defender defense roll)).<br>
+Damage is calculated this way to prevent 0 damage on successful hits.<br>
+<button onclick="ChangeScene('Start')">Return</button>
+
+
+
+</div>
+
+
+
+</body>
+	
